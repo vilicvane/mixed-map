@@ -1,4 +1,4 @@
-export default class MixedMap<K, V> {
+export class MixedMap<K, V> {
   private weakMap: WeakMap<any, V> | undefined;
   private map: Map<any, V> | undefined;
 
@@ -35,3 +35,5 @@ export default class MixedMap<K, V> {
     }
   }
 }
+
+export default MixedMap;

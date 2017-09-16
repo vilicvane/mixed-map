@@ -15,12 +15,14 @@ npm install mixed-map --save
 ## API
 
 ```ts
-export default class MixedMap<K, V> {
+export declare class MixedMap<K, V> {
   has(key: K): boolean;
   get(key: K): V | undefined;
   set(key: K, value: V): this;
   delete(key: K): boolean;
 }
+
+export default MixedMap;
 ```
 
 ## License
